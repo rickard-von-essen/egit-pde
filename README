@@ -7,6 +7,12 @@ and LICENSE files for the complete licenses within each package.
 
             == COMPATIBILITY                   ==
 
+- Eclipse 3.6.1 is the minimum Eclipse version for egit-pde 0.10 and later.
+
+- Newer version of EGit PDE Tools may implement new functionality, remove
+  existing functions and change others without other notice than what
+  is written in the commit log and source files themselves.
+  
             == Package Features                ==
 
             == Missing Features                ==

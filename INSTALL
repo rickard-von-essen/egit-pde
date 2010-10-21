@@ -3,6 +3,40 @@
 
 PREREQUISITES
 
+In order to install the EGit PDE Tools plugins you need to have the following
+things.
+
+- Eclipse version 3.6.1 with PDE
+
+- Java 6. 
+
+- A reasonably recent version of Git itself installed on your platform to
+  take care of what EGit does not yet do or do things that native
+  git does better.
+
 INSTALLATION INSTRUCTIONS
 
+- Delete any old versions of the plugin in the <eclipse-path>/dropins/[**/]org.eclipse.egit.*
+- Start eclipse
+- Make sure a recent JDK 1.6.x is among your installed JRE's. Which
+  one is the default should not matter but Java 6 is recommended. 
+- Import the jgit, egit and egit-pde projects. Make sure there are no compilation errors
+- Now you can either export the plugin to a set of jar files to use in an Eclipse 
+  installation or run it from within Eclipse. The latter is for development and 
+  tracking down bugs.
+- Export the plugin by selecting the org.eclipse.egit.* packages in package
+  explorer and choosing File/Export. Then select Deployable plug-ins and 
+  fragments and choose the Next button. Set Directory to the dropins folder of your
+  installation directory (NOT the plugins directory). Select Finish. After 
+  that restart Eclipse. 
+
 DEBUGGING INSTRUCTIONS
+
+- Select the org.eclipse.egit.relengtools project for debugging, and using the context menu select
+  Run As(or Debug As) / Eclipse Application. Make sure the application runs
+  using JDK 1.6 (or JDK1.5.0_11 or newer) if you have any problems.
+
+There may be errors in the <workspace>/.metadata/.log or even on stdout that can help
+you track down and problem. When reporting errors include stack traces and the commit
+id or the version your plugin is built from, or the version of the plugin if it does
+not contain a date.
