@@ -15,7 +15,7 @@
    <extension
          point="org.eclipse.pde.build.fetchFactories">
       <factory
-            class="org.eclipse.egit.fetchfactory.internal.GITFetchTaskFactory"
+            class="org.eclipse.egit.internal.fetchfactory.GITFetchTaskFactory"
             id="GIT">
       </factory>
    </extension>
