@@ -19,7 +19,7 @@
     <version>0.10.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>org.eclipse.egit-feature</artifactId>
+  <artifactId>org.eclipse.egit.fetchfactory-feature</artifactId>
   <packaging>eclipse-feature</packaging>
 
   <name>Git Fetch Factory for PDE Build Feature (Incubation)</name>

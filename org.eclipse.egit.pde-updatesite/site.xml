@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <description url="Eclipse Git Plugin">
-	Git support for PDE Build.
+   <description url="EGit PDE Tools">
+	EGit PDE Tools
    </description>
-   <feature url="features/org.eclipse.egit.pde_0.0.0.qualifier.jar" id="org.eclipse.egit.pde" version="0.0.0" patch="false">
+   <feature url="features/org.eclipse.egit.fetchfactory_0.0.0.qualifier.jar" id="org.eclipse.egit.fetchfactory" version="0.0.0" patch="false">
       <category name="Git Fetch Factory for PDE Build (Incubation)"/>
    </feature>
-   <category-def name="Git Fetch Factory for PDE Build (Incubation)" label="Git Fetch Factory for PDE Build (Incubation)">
+   <feature url="features/org.eclipse.egit.relengtools_0.0.0.qualifier.jar" id="org.eclipse.egit.relengtools" version="0.0.0" patch="false">
+      <category name="EGit Releng Tools Integration (Incubation)"/>
+   </feature>
+   <category-def name="EGit PDE Tools (Incubation)" label="EGit PDE Tools (Incubation)">
       <description>
-         Git Fetch Factory for PDE Build (Incubation)
+         A Git Fetch Factory for PDE Build and Releng Tools integration.
       </description>
    </category-def>
 </site>

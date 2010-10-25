@@ -25,7 +25,7 @@
   <artifactId>org.eclipse.egit.relengtools</artifactId>
   <packaging>eclipse-plugin</packaging>
 
-  <name>EGit RelEng Integration (Incubation)</name>
+  <name>EGit Releng Tools Integration (Incubation)</name>
 
   <!-- workaround for https://issues.sonatype.org/browse/TYCHO-168 -->
   <build>

@@ -57,6 +57,9 @@
     <tycho-version>0.10.0</tycho-version>
     <platform-version-name>helios</platform-version-name>
     <eclipse-site>http://download.eclipse.org/releases/${platform-version-name}</eclipse-site>
+    <jgit-site>file:/${basedir}/../../jgit/org.eclipse.jgit.packaging/org.eclipse.jgit.updatesite/target/site</jgit-site>
+    <egit-site>file:/${basedir}/../../egit/org.eclipse.egit-updatesite/target/site</egit-site>
+    <relengtools-site>http://download.eclipse.org/eclipse/updates/3.6</relengtools-site>
   </properties>
 
   <profiles>
@@ -76,8 +79,10 @@
 
   <modules>
     <module>org.eclipse.egit.fetchfactory</module>
+    <module>org.eclipse.egit.relengtools</module>
 
-    <module>org.eclipse.egit.pde-feature</module>
+    <module>org.eclipse.egit.fetchfactory-feature</module>
+    <module>org.eclipse.egit.relengtools-feature</module>
     <module>org.eclipse.egit.pde-updatesite</module>
    </modules>
 
@@ -86,6 +91,21 @@
       <id>helios</id>
       <layout>p2</layout>
       <url>${eclipse-site}</url>
+    </repository>
+    <repository>
+      <id>jgit</id>
+      <layout>p2</layout>
+      <url>${jgit-site}</url>
+    </repository>
+    <repository>
+      <id>egit</id>
+      <layout>p2</layout>
+      <url>${egit-site}</url>
+    </repository>
+    <repository>
+      <id>relengtools</id>
+      <layout>p2</layout>
+      <url>${relengtools-site}</url>
     </repository>
   </repositories>
   

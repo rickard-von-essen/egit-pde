@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.eclipse.egit.pde"
+      id="org.eclipse.egit.fetchfactory"
       label="%featureName"
       version="0.10.0.qualifier"
       provider-name="%providerName">
@@ -18,8 +18,8 @@
    </license>
 
    <url>
-      <update label="%updateSiteName" url="http://download.eclipse.org/egit/updates"/>
-      <discovery label="%updateSiteName" url="http://download.eclipse.org/egit/updates"/>
+      <update label="%updateSiteName" url="http://download.eclipse.org/egit/pde/updates"/>
+      <discovery label="%updateSiteName" url="http://download.eclipse.org/egit/pde/updates"/>
    </url>
 
    <requires>
