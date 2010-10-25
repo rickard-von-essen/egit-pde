@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2010 Chris Aniszczyk and others.
+    All rights reserved.
+
+    This program and the accompanying materials are made available under the
+    terms of the Eclipse Public License v1.0 which accompanies this distribution,
+    and is available at http://www.eclipse.org/legal/epl-v10.html.
+
+    Contributors:
+        Chris Aniszczyk <caniszczyk@gmail.com> - initial API and implementation
+ -->
+<feature
+      id="org.eclipse.egit.pde"
+      label="%featureName"
+      version="0.10.0.qualifier"
+      provider-name="%providerName">
+
+   <description url="http://www.eclipse.org/egit/">
+     %description
+   </description>
+
+   <copyright>
+     %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+     %license
+   </license>
+
+   <url>
+      <update label="%updateSiteName" url="http://download.eclipse.org/egit/updates"/>
+      <discovery label="%updateSiteName" url="http://download.eclipse.org/egit/updates"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.equinox.common" version="3.6.0" match="compatible"/>
+      <import plugin="org.eclipse.pde.build" version="3.6.1" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.egit.fetchfactory"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
