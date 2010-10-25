@@ -78,6 +78,7 @@
     <module>org.eclipse.egit.fetchfactory</module>
 
     <module>org.eclipse.egit.pde-feature</module>
+    <module>org.eclipse.egit.pde-updatesite</module>
    </modules>
 
   <repositories>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description url="Eclipse Git Plugin">
+	Git support for PDE Build.
+   </description>
+   <feature url="features/org.eclipse.egit.pde_0.0.0.qualifier.jar" id="org.eclipse.egit.pde" version="0.0.0" patch="false">
+      <category name="Git Fetch Factory for PDE Build (Incubation)"/>
+   </feature>
+   <category-def name="Git Fetch Factory for PDE Build (Incubation)" label="Git Fetch Factory for PDE Build (Incubation)">
+      <description>
+         Git Fetch Factory for PDE Build (Incubation)
+      </description>
+   </category-def>
+</site>
