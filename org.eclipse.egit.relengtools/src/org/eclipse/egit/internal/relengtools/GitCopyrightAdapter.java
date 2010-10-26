@@ -10,7 +10,7 @@
  *     IBM Corporation - initial API and implementation of CVS adapter
  *     Gunnar Wagenknecht - initial API and implementation
  *******************************************************************************/
-package org.eclipse.egit.relengtools.internal;
+package org.eclipse.egit.internal.relengtools;
 
 import java.io.IOException;
 import java.util.Calendar;

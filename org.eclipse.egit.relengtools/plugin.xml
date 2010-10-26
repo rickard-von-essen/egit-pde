@@ -16,11 +16,27 @@
          point="org.eclipse.core.runtime.adapters">
       <factory
             adaptableType="org.eclipse.team.core.RepositoryProviderType"
-            class="org.eclipse.egit.relengtools.internal.GitCopyrightAdapterFactory">
+            class="org.eclipse.egit.internal.relengtools.GitCopyrightAdapterFactory">
          <adapter
                type="org.eclipse.releng.tools.IRepositoryProviderCopyrightAdapterFactory">
          </adapter>
       </factory>
    </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="org.eclipse.ui.category.project"
+            defaultHandler="org.eclipse.egit.internal.relengtools.TagAndReleaseHandler"
+            id="z.ex.git.releng.tagAndRelease"
+            name="%command.tagAndRelease">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.project"
+            defaultHandler="org.eclipse.egit.internal.relengtools.ShowInfoHandler:test"
+            id="org.eclipse.egit.relengtools.showInfo"
+            name="%command.showInfo">
+      </command>
+   </extension>
+
 
 </plugin>
