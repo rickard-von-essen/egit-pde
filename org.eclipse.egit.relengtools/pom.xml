@@ -19,7 +19,7 @@
   <parent>
     <groupId>org.eclipse.egit.pde</groupId>
     <artifactId>egit-pde-parent</artifactId>
-    <version>0.10.0-SNAPSHOT</version>
+    <version>0.12.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>org.eclipse.egit.relengtools</artifactId>
